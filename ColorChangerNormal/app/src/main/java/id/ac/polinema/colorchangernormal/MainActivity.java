@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 		btnChangeColor = findViewById(R.id.change_color);
 		colorViewModel = ViewModelProviders.of(this).get(ColorViewModel.class);
 		rootView.setBackgroundColor(colorViewModel.getColor());
-		
+
 		// Tambahkan event klik pada tombol
 		btnChangeColor.setOnClickListener(new View.OnClickListener() {
 			@Override
